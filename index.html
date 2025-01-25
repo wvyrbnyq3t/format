@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/root.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <!-- Google Fontsの読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Material Icon -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="upsell">
+      <section>
+        <div class="header">
+          <h2 class="fs-large">重要なお知らせ</h2>
+          <button type="button" class="btn-close"></button>
+        </div>
+        <p>トゥモローランド一部通行規制実施について</p>
+      </section>
+    </div>
+    <div id="modal">
+      <div class="overlay"></div>
+      <div class="center">
+        <section data-field="test2">
+          <h2 class="fs-large">テスト2</h2>
+          <div class="container-btn">
+            <button type="button" class="btn-secondary w-100 btn-closeModal">
+              閉じる
+            </button>
+          </div>
+        </section>
+      </div>
+      <div class="bottom">
+        <section data-field="test1">
+          <h2 class="fs-large">テスト1</h2>
+          <div class="container-btn">
+            <button type="button" class="btn-secondary w-100 btn-closeModal">
+              閉じる
+            </button>
+          </div>
+        </section>
+      </div>
+    </div>
+    <nav id="globalNav">
+      <div class="overlay"></div>
+      <div class="navInner">
+        <button type="button" class="btn-secondary w-100 btn-closeNav">閉じる</button>
+      </div>
+    </nav>
+    <div class="pageContent">
+      <main>
+        <section>
+          <button type="button" class="btn-secondary w-100 btn-openNav">ナビを開く</button>
+          <ul class="list-dotted">
+            <li class="list-item">
+              <p>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+            </li>
+            <li class="list-item">
+              <p>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+            </li>
+            <li class="list-item">
+              <p>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+            </li>
+          </ul>
+          <ul class="list-notice">
+            <li class="list-item">
+              <p>ダミーテキスト</p>
+            </li>
+          </ul>
+          <div class="switchBtn-wrap">
+            <ul class="switchBtn">
+              <li>
+                <a href="" class="is-selected" data-field="all">すべて</a>
+              </li>
+              <li>
+                <a href="" data-field="search">比較</a>
+              </li>
+            </ul>
+            <ul class="switchBtn-content">
+              <li>
+                <div class="switchBtn-contentInner is-selected" data-field="all">
+                  <h3 class="title">すべて</h3>
+                </div>
+              </li>
+              <li>
+                <div class="switchBtn-contentInner" data-field="search">
+                  <h3 class="title">比較</h3>
+                  <p>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <ul class="nav-underline" style="--i: 4">
+            <li class="navItem">
+              <a href="" class="navLink is-selected">すべて</a>
+            </li>
+            <li class="navItem">
+              <a href="" class="navLink">アトラクション</a>
+            </li>
+            <li class="navItem">
+              <a href="" class="navLink">ショップ</a>
+            </li>
+            <li class="navItem">
+              <a href="" class="navLink">レストラン</a>
+            </li>
+          </ul>
+          <div class="carousel-banner" style="--i: 3">
+            <div class="carousel-item"></div>
+            <div class="carousel-item"></div>
+            <div class="carousel-item"></div>
+          </div>
+          <ul class="flexBox">
+            <li>
+              <p class="btn-secondary">アトラクション</p>
+            </li>
+            <li>
+              <p class="btn-secondary">ショー / パレード</p>
+            </li>
+            <li>
+              <p class="btn-secondary">ショップ</p>
+            </li>
+            <li>
+              <p class="btn-secondary">レストラン</p>
+            </li>
+            <li>
+              <p class="btn-secondary">その他サービス施設</p>
+            </li>
+          </ul>
+          <div class="column-wrap">
+            <div>
+              <button
+                type="button"
+                class="btn-primary w-100 btn-openModal"
+                data-field="test1"
+              >
+                モーダルウィンドウを表示
+              </button>
+            </div>
+            <div>
+              <button
+                type="button"
+                class="btn-primary w-100 btn-openModal"
+                data-field="test2"
+              >
+                モーダルウィンドウを表示
+              </button>
+            </div>
+          </div>
+          <div class="alert alert-primary">
+            <div class="header">
+              <p class="title">タイトル</p>
+              <button type="button" class="btn-close"></button>
+            </div>
+            <div class="txtBox">
+              <p>
+                ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+              </p>
+            </div>
+          </div>
+          <div class="alert alert-success">
+            <div class="header">
+              <p class="title">タイトル</p>
+              <button type="button" class="btn-close"></button>
+            </div>
+            <div class="txtBox">
+              <p>
+                ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+              </p>
+            </div>
+          </div>
+          <div class="alert alert-warning">
+            <div class="header">
+              <p class="title">タイトル</p>
+              <button type="button" class="btn-close"></button>
+            </div>
+            <div class="txtBox">
+              <p>
+                ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+              </p>
+            </div>
+          </div>
+          <div class="alert alert-info">
+            <div class="header">
+              <p class="title">タイトル</p>
+              <button type="button" class="btn-close"></button>
+            </div>
+            <div class="txtBox">
+              <p>
+                ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+              </p>
+            </div>
+          </div>
+          <h1 class="fs-xlarge">タイトル</h1>
+          <h2 class="fs-large">タイトル</h2>
+          <h3 class="fs-noraml">タイトル</h3>
+          <h4 class="fs-medium">タイトル</h4>
+          <h5 class="fs-small">タイトル</h5>
+          <h6 class="fs-xsmall">タイトル</h6>
+          <div class="container-btn">
+            <button type="button" class="btn-primary w-100">ボタン</button>
+          </div>
+          <div class="container-btn">
+            <button type="button" class="btn-secondary w-100">ボタン</button>
+          </div>
+          <div class="container-btn">
+            <button type="button" class="btn-tertiary w-100">ボタン</button>
+          </div>
+          <div class="pcColumn-wrap">
+            <div>
+              <button type="button" class="btn-primary w-100">ボタン</button>
+            </div>
+            <div>
+              <button type="button" class="btn-primary btn-icn-openInNew w-100">
+                ボタン
+              </button>
+            </div>
+          </div>
+          <div class="pcColumn-wrap">
+            <div>
+              <button type="button" class="btn-secondary w-100">ボタン</button>
+            </div>
+            <div>
+              <button
+                type="button"
+                class="btn-secondary btn-icn-openInNew w-100"
+              >
+                ボタン
+              </button>
+            </div>
+          </div>
+          <div class="pcColumn-wrap">
+            <div>
+              <button type="button" class="btn-tertiary w-100">ボタン</button>
+            </div>
+            <div>
+              <button
+                type="button"
+                class="btn-tertiary btn-icn-openInNew w-100"
+              >
+                ボタン
+              </button>
+            </div>
+          </div>
+          <div class="column-wrap">
+            <div>
+              <button
+                type="button"
+                class="btn-primary w-100"
+                aria-disabled="true"
+              >
+                ボタン
+              </button>
+            </div>
+            <div>
+              <button
+                type="button"
+                class="btn-secondary w-100"
+                aria-disabled="true"
+              >
+                ボタン
+              </button>
+            </div>
+          </div>
+          <div>
+            <p class="badge badge-large">バッジ</p>
+            <p class="badge badge-normal">バッジ</p>
+            <p class="badge badge-small">バッジ</p>
+          </div>
+          <div>
+            <input type="text" name="" id="" class="form-input" />
+          </div>
+          <div>
+            <select name="" id="" class="form-select">
+              <option value="">選択</option>
+              <option value="">コカ・コーラ</option>
+              <option value="">キリンレモン</option>
+            </select>
+          </div>
+          <div>
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              class="form-textarea"
+            ></textarea>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
