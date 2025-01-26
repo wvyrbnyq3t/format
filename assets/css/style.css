@@ -508,6 +508,7 @@ body.is-modal {
   section {
     background-color: #fff;
     border-top: 0.1rem solid var(--c-gray);
+    margin: 0 auto;
     padding: 1.6rem 1.6rem calc(3.2rem + env(safe-area-inset-bottom));
     transform: translate(0, 100%);
     transition: all 0.4s;
