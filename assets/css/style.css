@@ -19,7 +19,6 @@
 
 html {
   font-size: 10px;
-  touch-action: pan-x pan-y;
 
   body {
     color: var(--c-txt);
