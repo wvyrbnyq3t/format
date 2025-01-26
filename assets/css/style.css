@@ -219,6 +219,21 @@ html {
   }
 }
 
+/* card */
+.card {
+  .card-body {
+    padding: 1.2rem 0;
+
+    .card-title {
+      font-size: 20px;
+    }
+    .card-txtBox {
+      font-size: 1.2rem;
+      padding-top: 0.8rem;
+    }
+  }
+}
+
 /* column */
 .pcColumn-wrap {
   display: grid;
@@ -307,7 +322,7 @@ html {
         padding: 0.8rem 3.2rem;
         text-align: center;
         transition: all 0.4s;
-        width: fit-content;
+        width: 100%;
 
         &.is-selected {
           background-color: var(--c-primary);
@@ -396,6 +411,7 @@ body.is-modal {
     section {
       border-radius: 1.6rem;
       max-height: calc(100% - 3.2rem);
+      padding: 1.6rem !important;
       width: min(calc(100% - 3.2rem), calc(var(--w-pc) - 3.2rem));
     }
   }
@@ -422,6 +438,7 @@ body.is-modal {
     background-color: #fff;
     height: fit-content;
     max-height: calc(100% - 3.2rem);
+    overflow: hidden scroll;
     padding: 3.2rem 1.6rem calc(3.2rem + env(safe-area-inset-bottom));
     visibility: hidden;
     z-index: 101;
