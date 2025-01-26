@@ -706,3 +706,85 @@ body.is-modal {
     }
   }
 }
+
+/* ====================================== */
+#slider {
+  height: 100dvh;
+  width: min(100dvw, var(--w-pc));
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  visibility: hidden;
+  z-index: 100;
+
+  section {
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden auto;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(100%, 0);
+    transition: all 0.4s;
+
+    &.is-show {
+      visibility: visible;
+      transform: translate(0, 0);
+    }
+
+    .btn-close {
+      cursor: pointer;
+      height: auto;
+      width: auto;
+      position: fixed;
+      top: 1.2rem;
+      left: 1.2rem;
+      z-index: 101;
+
+      &::before {
+        color: var(--c-primary);
+        content: "\e5cd";
+        font-size: 3.2rem;
+        position: absolute;
+        top: 1.2rem;
+        left: 1.2rem;
+
+        font-family: "Material Symbols Outlined";
+        font-weight: normal;
+        font-style: normal;
+        display: inline-block;
+        line-height: 1;
+        text-transform: none;
+        letter-spacing: normal;
+        word-wrap: normal;
+        white-space: nowrap;
+        direction: ltr;
+      }
+    }
+
+    .slider-body {
+      padding: 1.6rem;
+
+      > * {
+        margin-bottom: 1.6rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      .slider-body-header {
+        margin-bottom: 1.6rem;
+
+        .slider-title {
+          font-size: 2.0rem;
+        }
+      }
+    }
+  }
+}

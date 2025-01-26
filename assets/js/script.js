@@ -102,4 +102,23 @@ $(function () {
       $(".mainMenu .child").removeClass("is-show");
     }
   });
+  // slider
+  $("#slider section .btn-close").click((e) => {
+    const $this = $(e.currentTarget);
+    const $sliderContent = $this.parents("section");
+    const $slider = $("#slider");
+
+    $sliderContent.removeClass("is-show");
+    $("body").removeClass("is-modal");
+  });
+  $(".btn-openSlider").click((e) => {
+    const $this = $(e.currentTarget);
+    const field = $this.data("field");
+    const $sliderContent = $(`#slider section[data-field="${field}"]`);
+
+    if ($sliderContent) {
+      $sliderContent.addClass("is-show");
+      $("body").addClass("is-modal")
+    }
+  });
 });
