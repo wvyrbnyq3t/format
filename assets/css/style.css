@@ -61,6 +61,10 @@ html {
   }
 }
 
+.alert-tips {
+  border-left-width: 1.2rem;
+}
+
 .alert-success {
   border-color: var(--c-green);
 
@@ -233,6 +237,13 @@ html {
   }
 }
 
+/* divider */
+.divider-bottom {
+  border-bottom: 0.1rem solid var(--c-gray);
+  padding-bottom: 1.6rem !important;
+  margin-bottom: 1.6rem !important;
+}
+
 /* column */
 .pcColumn-wrap {
   display: grid;
@@ -305,7 +316,6 @@ html {
 .list-facility {
   display: grid;
   gap: 0.8rem;
-  padding: 1.6rem 0;
 
   .list-item {
     .list-item-link {
@@ -598,6 +608,9 @@ body.is-modal {
 
 /* ====================================== */
 .nav-wrap {
+  .nav-body {
+    padding-top: 1.6rem;
+  }
   .nav-underline {
     display: grid;
     gap: 0;
@@ -860,7 +873,7 @@ body.is-modal {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      
+
       font-family: "Material Symbols Outlined";
       font-weight: normal;
       font-style: normal;
