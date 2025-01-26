@@ -844,13 +844,13 @@ body.is-modal {
 .spinnerBtn-wrap {
   display: grid;
   gap: 0.8rem;
-  grid-template-columns: repeat(3, 3.6rem);
+  grid-template-columns: repeat(3, 3.8rem);
 
   .spinnerBtn {
     border: 0.2rem solid var(--c-primary);
     border-radius: 99rem;
-    height: 3.6rem;
-    width: 3.6rem;
+    height: 3.8rem;
+    width: 3.8rem;
     position: relative;
 
     &::before {
