@@ -58,9 +58,15 @@ $(function () {
     e.preventDefault();
     const $this = $(e.currentTarget);
     const $nav = $this.parents(".nav-underline");
+    const field = $this.data("field");
+    const wrap = $this.parents(".nav-wrap");
+    const navContent = wrap.find(`.nav-content[data-field="${field}"]`);
 
     $nav.find(".navLink").removeClass("is-selected");
     $this.addClass("is-selected");
+
+    wrap.find(".nav-content").removeClass("is-selected");
+    navContent.addClass("is-selected");
   });
 
   // globalNav

@@ -302,6 +302,45 @@ html {
   }
 }
 
+.list-facility {
+  display: grid;
+  gap: 0.8rem;
+  padding: 1.6rem 0;
+
+  .list-item {
+    .list-item-link {
+      box-shadow: 0 0 0.1rem #333;
+      display: grid;
+      grid-template-columns: 6.0rem 1fr;
+      gap: 1.6rem;
+      padding: 1.6rem;
+
+      .imgBox {
+        border: .2rem solid var(--c-primary);
+        border-radius: 99rem;
+        height: 6.0rem;
+        width: 6.0rem;
+        overflow: hidden;
+
+        img {
+          border: .2rem solid #fff;
+          border-radius: 99rem;
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          overflow: hidden;
+        }
+      }
+      .txtBox {
+        .list-item-title {
+          font-size: 1.6rem;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
 /* switchBtn */
 .switchBtn-wrap {
   .switchBtn {
@@ -556,30 +595,40 @@ body.is-modal {
 }
 
 /* ====================================== */
-.nav-underline {
-  display: grid;
-  gap: 0;
-  grid-template-columns: repeat(var(--i), 1fr);
-  width: 100%;
-
-  &::-webkit-scrollbar {
-    display: none;
+.nav-wrap {
+  .nav-underline {
+    display: grid;
+    gap: 0;
+    grid-template-columns: repeat(var(--i), 1fr);
+    width: 100%;
+  
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  
+    .navItem {
+      font-size: 1.2rem;
+      .navLink {
+        border-bottom: 0.2rem solid var(--c-gray);
+        display: block;
+        padding: 0.4rem;
+        text-align: center;
+        transition: all 0.4s;
+  
+        &.is-selected {
+          border-color: var(--c-primary);
+          color: var(--c-primary);
+          font-weight: 700;
+        }
+      }
+    }
   }
 
-  .navItem {
-    font-size: 1.2rem;
-    .navLink {
-      border-bottom: 0.2rem solid var(--c-gray);
-      display: block;
-      padding: 0.4rem;
-      text-align: center;
-      transition: all 0.4s;
+  .nav-content {
+    display: none;
 
-      &.is-selected {
-        border-color: var(--c-primary);
-        color: var(--c-primary);
-        font-weight: 700;
-      }
+    &.is-selected {
+      display: block;
     }
   }
 }
@@ -782,7 +831,7 @@ body.is-modal {
         margin-bottom: 1.6rem;
 
         .slider-title {
-          font-size: 2.0rem;
+          font-size: 2rem;
         }
       }
     }
