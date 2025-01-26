@@ -501,7 +501,8 @@ body.is-modal {
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 0);
-  width: min(100%, var(--w-pc));
+  visibility: hidden;
+  width: 100%;
   z-index: 100;
 
   section {
@@ -511,8 +512,8 @@ body.is-modal {
     transform: translate(0, 100%);
     transition: all 0.4s;
     visibility: hidden;
-    width: 100%;
-
+    width: min(100%, var(--w-pc));
+    
     &.is-show {
       transform: translate(0, 0);
       visibility: visible;
