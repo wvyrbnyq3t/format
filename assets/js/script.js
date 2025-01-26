@@ -124,7 +124,39 @@ $(function () {
 
     if ($sliderContent) {
       $sliderContent.addClass("is-show");
-      $("body").addClass("is-modal")
+      $("body").addClass("is-modal");
+    }
+  });
+
+  // spinnerBtn
+  $(".spinnerBtn").click((e) => {
+    const $this = $(e.currentTarget);
+
+    if ($this.attr("aria-disabled") == "false") {
+      const $wrap = $this.parents(".spinnerBtn-wrap");
+      const field = $this.data("field");
+      const type = $this.data("type");
+
+      const $input = $wrap.find(`input[name="${field}"]`);
+      const value = parseInt($input.val());
+
+      $wrap.find(".spinnerBtn").attr("aria-disabled", "false");
+
+      if (type === "plus") {
+        $input.val(value + 1);
+        const max = $input.attr("max");
+
+        if(max == value + 1){
+          $this.attr("aria-disabled", "true");
+        }
+      } else {
+        $input.val(value - 1);
+        const min = $input.attr("min");
+
+        if(min == value - 1){
+          $this.attr("aria-disabled", "true");
+        }
+      }
     }
   });
 });

@@ -311,19 +311,19 @@ html {
     .list-item-link {
       box-shadow: 0 0 0.1rem #333;
       display: grid;
-      grid-template-columns: 6.0rem 1fr;
+      grid-template-columns: 6rem 1fr;
       gap: 1.6rem;
       padding: 1.6rem;
 
       .imgBox {
-        border: .2rem solid var(--c-primary);
+        border: 0.2rem solid var(--c-primary);
         border-radius: 99rem;
-        height: 6.0rem;
-        width: 6.0rem;
+        height: 6rem;
+        width: 6rem;
         overflow: hidden;
 
         img {
-          border: .2rem solid #fff;
+          border: 0.2rem solid #fff;
           border-radius: 99rem;
           height: 100%;
           width: 100%;
@@ -514,7 +514,7 @@ body.is-modal {
     transition: all 0.4s;
     visibility: hidden;
     width: min(100%, var(--w-pc));
-    
+
     &.is-show {
       transform: translate(0, 0);
       visibility: visible;
@@ -603,11 +603,11 @@ body.is-modal {
     gap: 0;
     grid-template-columns: repeat(var(--i), 1fr);
     width: 100%;
-  
+
     &::-webkit-scrollbar {
       display: none;
     }
-  
+
     .navItem {
       font-size: 1.2rem;
       .navLink {
@@ -616,7 +616,7 @@ body.is-modal {
         padding: 0.4rem;
         text-align: center;
         transition: all 0.4s;
-  
+
         &.is-selected {
           border-color: var(--c-primary);
           color: var(--c-primary);
@@ -836,6 +836,72 @@ body.is-modal {
           font-size: 2rem;
         }
       }
+    }
+  }
+}
+
+/* ====================================== */
+.spinnerBtn-wrap {
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: repeat(3, 3.6rem);
+
+  .spinnerBtn {
+    border: 0.2rem solid var(--c-primary);
+    border-radius: 99rem;
+    height: 3.6rem;
+    width: 3.6rem;
+    position: relative;
+
+    &::before {
+      color: var(--c-primary);
+      font-size: 3.2rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      
+      font-family: "Material Symbols Outlined";
+      font-weight: normal;
+      font-style: normal;
+      display: inline-block;
+      line-height: 1;
+      text-transform: none;
+      letter-spacing: normal;
+      word-wrap: normal;
+      white-space: nowrap;
+      direction: ltr;
+    }
+
+    &[aria-disabled="true"] {
+      border-color: var(--c-gray);
+      cursor: not-allowed;
+
+      &::before {
+        color: var(--c-gray);
+      }
+    }
+
+    &[data-type="plus"] {
+      &::before {
+        content: "\e145";
+      }
+    }
+    &[data-type="minus"] {
+      &::before {
+        content: "\e15b";
+      }
+    }
+  }
+  input[type="number"] {
+    appearance: none;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      display: none;
     }
   }
 }

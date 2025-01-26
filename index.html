@@ -28,7 +28,7 @@
   </head>
   <body>
     <div id="slider">
-      <section data-field="parade">
+      <section data-field="facility">
         <span class="btn-close"></span>
         <div class="imgBox">
           <img
@@ -45,7 +45,7 @@
       </section>
     </div>
     <div id="upsell">
-      <section class="is-show">
+      <section>
         <div class="header">
           <h2 class="fs-large">重要なお知らせ</h2>
           <button type="button" class="btn-close"></button>
@@ -297,7 +297,7 @@
           <button
             type="button"
             class="btn-secondary w-100 btn-openSlider"
-            data-field="parade"
+            data-field="facility"
           >
             スライダーを開く
           </button>
@@ -570,6 +570,11 @@
             <p class="badge badge-large">バッジ</p>
             <p class="badge badge-normal">バッジ</p>
             <p class="badge badge-small">バッジ</p>
+          </div>
+          <div class="spinnerBtn-wrap">
+            <button type="button" class="spinnerBtn" data-field="count" data-type="minus" aria-disabled="true"></button>
+            <input type="number" name="count" id="count" value="0" min="0" max="10" readonly>
+            <button type="button" class="spinnerBtn" data-field="count" data-type="plus" aria-disabled="false"></button>
           </div>
           <div>
             <input type="text" name="" id="" class="form-input" />
