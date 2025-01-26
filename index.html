@@ -59,25 +59,56 @@
         </section>
       </div>
     </div>
-    <nav id="globalNav">
+    <nav id="globalNav" class="is-active">
       <div class="overlay"></div>
       <div class="navInner">
         <div class="mainMenu">
-          <ul>
+          <ul class="parent">
             <li>
               <a href="">TOP</a>
             </li>
             <li>
-              <a href="">イベント</a>
+              <a href="" data-field="event">イベント</a>
             </li>
             <li>
-              <a href="">参加団体紹介</a>
+              <a href="" data-field="group">参加団体紹介</a>
             </li>
             <li>
               <a href="">スポンサー紹介</a>
             </li>
             <li>
               <a href="">企画実行委員会について</a>
+            </li>
+          </ul>
+          <ul class="child" data-field="event">
+            <li>
+              <a href="" class="link-back"> 戻る </a>
+            </li>
+            <li>
+              <a href="">全日イベント</a>
+            </li>
+            <li>
+              <a href="">ステージイベント</a>
+            </li>
+          </ul>
+          <ul class="child" data-field="group">
+            <li>
+              <a href="" class="link-back">戻る</a>
+            </li>
+            <li>
+              <a href="">工大連</a>
+            </li>
+            <li>
+              <a href="">文化連合</a>
+            </li>
+            <li>
+              <a href="">技術連盟</a>
+            </li>
+            <li>
+              <a href="">その他登録団体</a>
+            </li>
+            <li>
+              <a href="">非登録団体</a>
             </li>
           </ul>
         </div>
@@ -94,16 +125,24 @@
     <div class="pageContent">
       <main>
         <section>
-          <button type="button" class="btn-secondary w-100 btn-openNav">ナビを開く</button>
+          <button type="button" class="btn-secondary w-100 btn-openNav">
+            ナビを開く
+          </button>
           <ul class="list-dotted">
             <li class="list-item">
-              <p>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+              <p>
+                ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+              </p>
             </li>
             <li class="list-item">
-              <p>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+              <p>
+                ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+              </p>
             </li>
             <li class="list-item">
-              <p>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+              <p>
+                ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+              </p>
             </li>
           </ul>
           <ul class="list-notice">
@@ -122,14 +161,19 @@
             </ul>
             <ul class="switchBtn-content">
               <li>
-                <div class="switchBtn-contentInner is-selected" data-field="all">
+                <div
+                  class="switchBtn-contentInner is-selected"
+                  data-field="all"
+                >
                   <h3 class="title">すべて</h3>
                 </div>
               </li>
               <li>
                 <div class="switchBtn-contentInner" data-field="search">
                   <h3 class="title">比較</h3>
-                  <p>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+                  <p>
+                    ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                  </p>
                 </div>
               </li>
             </ul>

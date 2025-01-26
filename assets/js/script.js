@@ -48,7 +48,9 @@ $(function () {
     $switchBtn.find("a").removeClass("is-selected");
     $this.addClass("is-selected");
     wrap.find(".switchBtn-contentInner").removeClass("is-selected");
-    wrap.find(`.switchBtn-contentInner[data-field="${field}"]`).addClass("is-selected");
+    wrap
+      .find(`.switchBtn-contentInner[data-field="${field}"]`)
+      .addClass("is-selected");
   });
 
   // nav-underline
@@ -67,5 +69,37 @@ $(function () {
   });
   $("#globalNav .btn-closeNav").click(() => {
     $("#globalNav").removeClass("is-active");
-  })
+  });
+  // mainMenu
+  $(".mainMenu a[data-field]").click((e) => {
+    e.preventDefault();
+
+    const $this = $(e.target);
+    const field = $this.data("field");
+    const parent = $this.parents(".mainMenu");
+    const child = parent.find(`.child[data-field="${field}"]`);
+
+    parent.addClass("is-active");
+    child.addClass("is-show");
+
+    // 横にスクロール
+    parent.scrollLeft(child.position().left);
+  });
+
+  $(".mainMenu a.link-back").click((e) => {
+    e.preventDefault();
+
+    const $this = $(e.target);
+    const parent = $this.parents(".mainMenu");
+
+    parent.scrollLeft(0);
+  });
+
+  // スクロールが終わったらクラスを削除
+  $(".mainMenu").on("scroll", () => {
+    if ($(".mainMenu").scrollLeft() === 0) {
+      $(".mainMenu").removeClass("is-active");
+      $(".mainMenu .child").removeClass("is-show");
+    }
+  });
 });
