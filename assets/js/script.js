@@ -91,8 +91,8 @@ $(function () {
     // 横にスクロール
     // parent.scrollLeft(child.position().left);
     parent.animate({
-      scrollLeft: child.position().left,
-    }, 50)
+      scrollLeft: child.offset().left,
+    }, 0)
   });
 
   $(".mainMenu a.link-back").click((e) => {
