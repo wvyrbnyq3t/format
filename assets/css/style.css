@@ -529,7 +529,7 @@ body.is-modal {
       transform: translate(0, 0);
       visibility: visible;
     }
-    .header {
+    .upsell-header {
       display: flex;
       align-items: center;
       padding-bottom: 1.6rem;
@@ -606,8 +606,35 @@ body.is-modal {
   }
 }
 
+.carousel-slider {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: nowrap;
+  overflow: scroll hidden;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .carousel-item {
+    flex-shrink: 0;
+  }
+}
+
 /* ====================================== */
 .nav-wrap {
+  height: 100%;
+  position: relative;
+
+  .nav-header {
+    background-color: #fff;
+    padding-top: 0.8rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
   .nav-body {
     padding-top: 1.6rem;
   }

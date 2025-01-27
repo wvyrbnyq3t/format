@@ -89,7 +89,10 @@ $(function () {
     child.addClass("is-show");
 
     // 横にスクロール
-    parent.scrollLeft(child.position().left);
+    // parent.scrollLeft(child.position().left);
+    parent.animate({
+      scrollLeft: child.position().left,
+    }, 50)
   });
 
   $(".mainMenu a.link-back").click((e) => {
