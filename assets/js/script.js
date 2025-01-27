@@ -85,14 +85,12 @@ $(function () {
     const parent = $this.parents(".mainMenu");
     const child = parent.find(`.child[data-field="${field}"]`);
 
-    parent.addClass("is-active");
-    child.addClass("is-show");
+    if (child) {
+      parent.addClass("is-active");
+      child.addClass("is-show");
 
-    // 横にスクロール
-    // parent.scrollLeft(child.position().left);
-    parent.animate({
-      scrollLeft: child.offset().left,
-    }, 0)
+      parent.scrollLeft(child.offset().left);
+    }
   });
 
   $(".mainMenu a.link-back").click((e) => {
@@ -149,14 +147,14 @@ $(function () {
         $input.val(value + 1);
         const max = $input.attr("max");
 
-        if(max == value + 1){
+        if (max == value + 1) {
           $this.attr("aria-disabled", "true");
         }
       } else {
         $input.val(value - 1);
         const min = $input.attr("min");
 
-        if(min == value - 1){
+        if (min == value - 1) {
           $this.attr("aria-disabled", "true");
         }
       }
