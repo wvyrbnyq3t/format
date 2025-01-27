@@ -404,16 +404,16 @@ html {
   font-size: var(--fs-large);
 }
 
+.fs-medium {
+  font-size: var(--fs-medium);
+}
+
 .fs-normal {
   font-size: var(--fs-normal);
 }
 
 .fs-small {
   font-size: var(--fs-small);
-}
-
-.fs-xsmall {
-  font-size: var(--fs-xsmall);
 }
 
 /* width */
