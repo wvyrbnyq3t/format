@@ -72,6 +72,7 @@ $(function () {
   // globalNav
   $(".btn-openNav").click(() => {
     $("#globalNav").addClass("is-active");
+    $("body").addClass("is-modal");
   });
   $("#globalNav .btn-closeNav").click(() => {
     $("#globalNav").removeClass("is-active");
