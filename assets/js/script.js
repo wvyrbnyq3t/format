@@ -76,6 +76,7 @@ $(function () {
   });
   $("#globalNav .btn-closeNav").click(() => {
     $("#globalNav").removeClass("is-active");
+    $("body").removeClass("is-modal");
   });
   // mainMenu
   $(".mainMenu a[data-field]").click((e) => {

@@ -45,7 +45,7 @@ html {
     display: none;
   }
 
-  .header {
+  .alert-header {
     color: var(--c-primary);
     display: flex;
     align-items: center;
@@ -493,12 +493,13 @@ body.is-modal {
     &.is-show {
       visibility: visible;
     }
+    .modal-body {
+      > * {
+        margin-bottom: 1.6rem;
 
-    > * {
-      margin-bottom: 1.6rem;
-
-      &:last-child {
-        margin-bottom: 0;
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
     }
   }
